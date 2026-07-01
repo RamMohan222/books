@@ -138,3 +138,53 @@ Billion = 10^9
 | Image thumbnail        |     20–100 KB |
 | HD photo               |        2–5 MB |
 | 1080p video (1 minute) |     50–100 MB |
+
+--------
+
+# Converting Requests per Day to Requests per Second
+
+## Formula
+
+\[
+\text{Requests/sec} = \frac{\text{Requests/day}}{24 \times 60 \times 60}
+= \frac{\text{Requests/day}}{86,400}
+\]
+
+## Example: 1 Million Requests/Day
+
+\[
+\frac{1,000,000}{86,400}
+\approx 11.57
+\]
+
+**Answer:** ≈ **11.6 requests/second** (round to **12 requests/sec**)
+
+---
+
+## Quick Reference
+
+| Requests/Day | Requests/Second (Approx.) |
+|--------------|--------------------------:|
+| 1 Million    | 12/sec                    |
+| 10 Million   | 116/sec                   |
+| 100 Million  | 1,160/sec                 |
+| 1 Billion    | 11,600/sec                |
+
+---
+
+## Mental Shortcut
+
+Since:
+
+\[
+1,000,000 \div 86,400 \approx 11.6
+\]
+
+You can remember:
+
+- **1 Million/day ≈ 12 requests/sec**
+- **10 Million/day ≈ 120 requests/sec**
+- **100 Million/day ≈ 1,200 requests/sec**
+- **1 Billion/day ≈ 12,000 requests/sec**
+
+These rounded values are commonly used for back-of-the-envelope estimations in system design interviews.
