@@ -145,17 +145,22 @@ Billion = 10^9
 
 ## Formula
 
-\[
-\text{Requests/sec} = \frac{\text{Requests/day}}{24 \times 60 \times 60}
-= \frac{\text{Requests/day}}{86,400}
-\]
+```
+                Requests/day
+Requests/sec = -------------- 
+                24 * 60 * 60
+
+                Requests/day
+Requests/sec = -------------- 
+                   86,400
+```
 
 ## Example: 1 Million Requests/Day
-
-\[
-\frac{1,000,000}{86,400}
-\approx 11.57
-\]
+```txt
+                1,000,000
+Requests/sec = -------------- ≈ 11.57
+                 86,400
+```
 
 **Answer:** ≈ **11.6 requests/second** (round to **12 requests/sec**)
 
@@ -175,10 +180,11 @@ Billion = 10^9
 ## Mental Shortcut
 
 Since:
-
-\[
-1,000,000 \div 86,400 \approx 11.6
-\]
+```
+                1,000,000
+Requests/sec = ----------- ≈ 11.57 (round to 12)
+                 86,400
+```
 
 You can remember:
 
